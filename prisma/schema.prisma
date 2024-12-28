@@ -46,12 +46,12 @@ model Booking {
   event          Event   @relation(fields: [eventId], references: [id], onDelete: Cascade)
   userId         String
   user           User    @relation("UserBookings", fields: [userId], references: [id])
-  name           String   // Name of the person booking the event
-  email          String   // Email of the person booking the event
-  additionalInfo String?  // Optional additional information from the person booking
+  name           String   
+  email          String   
+  additionalInfo String?  
   startTime      DateTime
   endTime        DateTime
-  meetLink       String  // Google Meet link for the booking
+  meetLink       String  
   googleEventId  String
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
@@ -64,7 +64,7 @@ model Availability {
 
   days        DayAvailability[]
 
-  timeGap     Int      // Minimum gap between bookings in minutes
+  timeGap     Int    
 
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
