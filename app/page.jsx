@@ -49,7 +49,7 @@ const Home = () => {
             Simplify Your Scheduling
           </h1>
           <p className="text-xl text-gray-600 mb-10">
-            Schedulrr helps you manage your time effectively. Create events, set
+            Schedular helps you manage your time effectively. Create events, set
             your availability, and let others book time with you seamlessly.
           </p>
           <Link href={"/dashboard"}>
